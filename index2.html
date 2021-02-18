@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+      <div class="nev-bar">
+         <ul>
+             <li><a href="#">Home</a></li>
+             <li><a href="#">About</a></li>
+             <li><a href="#">Image</a></li>
+             <li><a href="#">Contacr</a></li>
+             <li><a href="#">AboutUs</a></li>
+         </ul>
+      </div>
+    <div>
+      <h1 class="myName">sakib vai</h1>
+      <div class="image">
+       
+        <!-- <div> image tag  </div> -->
+      </div>
+    </div>
+
+    <div class="some-style">
+      <h1>Shoaib Ahmad Sakib</h1>
+    </div>
+    <div class="card">
+      <div class="card1">
+        <h1 class="box-heading">heading</h1>
+        <p id="paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore rem
+          laboriosam doloremq
+        </p>
+      </div>
+      <div class="card2">
+        <h1 class="box-heading">heading</h1>
+        <p id="paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore rem
+          laboriosam doloremq
+        </p>
+      </div>
+      <div class="card3">
+        <h1 class="box-heading">heading</h1>
+        <p id="paragraph">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore rem
+          laboriosam doloremq
+        </p>
+      </div>
+    </div>
+    <div class="card">
+        <div class="card4">
+          <h1 class="box-heading">heading</h1>
+          <p id="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore rem
+            laboriosam doloremq
+          </p>
+        </div>
+        <div class="card5">
+          <h1 class="box-heading">heading</h1>
+          <p id="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore rem
+            laboriosam doloremq
+          </p>
+        </div>
+        <div class="card6">
+          <h1 class="box-heading">heading</h1>
+          <p id="paragraph">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore rem
+            laboriosam doloremq
+          </p>
+        </div>
+      </div>
+
+    <div class="sometext">
+        <h1>This is kaki special</h1>
+    </div>
+      <div class="slider">
+      
+        </head>
+        <body>
+        
+        <div class="slideshow-container">
+        
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="3.jpg" height="500px" width="100%">
+          <div class="text">Caption Text</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="4.jpg" height="500px" width="100%">
+          <div class="text">Caption Two</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="5.jpg" height="500px" width="100%">
+          <div class="text">Caption Three</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+        
+      
+        
+      </div>
+
+      <div class="anothercard">
+          <div class="another1">
+              <div class="anotherline">
+                  <h2>Onwer</h2>
+            <p class="anotherpra">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aut dicta magnam eius ex excepturi eni
+
+            </p>
+        </div>
+        </div>
+          <div class="another2">
+              <div class="anotherline">
+                  <h2>Onwer</h2>
+            <p class="anotherpra">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aut dicta magnam eius ex excepturi eni
+
+            </p>
+        </div>
+        </div>
+          <div class="another3">
+              <div class="anotherline">
+                  <h2>Onwer</h2>
+            <p class="anotherpra">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis aut dicta magnam eius ex excepturi eni
+
+            </p>
+        </div>
+        </div>
+      </div>
+  </body>
+</html>
